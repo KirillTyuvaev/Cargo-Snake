@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YANGO Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #000;
+        }
+        .score {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #FF0000;
+            font-weight: bold;
+        }
+        .controls {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none;
+        }
+        .game-over h1 {
+            font-size: 120px;
+            color: #800080;
+            margin: 0;
+        }
+        .game-over p {
+            font-size: 36px;
+            color: #FFF;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="score">BRANDED TRUCKS: <span id="score">2</span></div>
+    <canvas id="gameCanvas" width="1400" height="1000"></canvas>
+    <div class="game-over" id="gameOver">
+        <h1>CARGO GRAPE</h1>
+        <p>Press SPACE to restart</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
